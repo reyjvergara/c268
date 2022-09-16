@@ -1,0 +1,34 @@
+  131  cd ~ 
+  132  pwd
+  133  mkdir Algo1
+  134  cd Algo1/ && mkdir config && mkdir bin && mkdir logs && mkdir scripts
+  135  ls
+  136  cd config
+  137  touch config.config && touch variables
+  138  cd ../scripts/
+  139  touch start.sh && touch stop.sh && touch admin.sh
+  140  cd ../logs/
+  141  touch today.log
+  142  cd
+  143  tree 
+  144  ls -R
+  145  cd ./Algo1/config/ && rm variables
+  146  ls
+  147  cd .. && rm -rf bin
+  148  ls
+  149  cd ~
+  150  cd Algo1/ && mkdir bin
+  151  ls
+  152  cd logs/ && mkdir oldlogs
+  153  cd oldlogs/ && mkdir 2019 2018 2017
+  154  ls
+  155  cd 2017 && touch 2017.log
+  156  cd ../2018 && touch 2018.log
+  157  cd ../2019 && touch 2019.log
+  158  cd ~
+  159  rm -rf Algo1/logs/oldlogs/
+  160  cd ~
+  161  find . -name *.sh
+  162  cd ./Algo1/scripts/ && rm s*.sh
+  163  ls
+  164  cd ../../c268/c268-gh/ && history > Rey.091622.module3
