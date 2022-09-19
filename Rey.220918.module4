@@ -1,0 +1,39 @@
+    1  STOCK=AAPL
+    2  echo $STOCK
+    3  STOCK+=_US
+    4  PRICE=290.84
+    5  echo The currenty price of $STOCK is $PRICE
+    6  WHOAMI=$(USER)
+    7  echo $WHOAMI
+    8  SERVERTYPE=$(uname)
+    9  echo $SERVERTYPE
+   10  CMD='uname -i'
+   11  echo $CMD
+   12  echo `$CMD`
+   13  uname -i
+   14  cd ~
+   15  mkdir scripts
+   16  echo $PATH
+   17  PATH+="~/scripts:$PATH"
+   18  echo $PATH
+   19  rm -rf Algo1
+   20  mkdir Payment1
+   21  cd Payment1/ && mkdir logs configuration scripts
+   22  cd scripts/ && touch start.sh
+   23  cd ../configuration/ && touch instance.properties
+   24  chmod 744 instance.properties 
+   25  chmod 771 ../scripts/start.sh 
+   26  man cat > ~/cat.output
+   27  chmod 474 ~/cat.output 
+   28  cd ~
+   29  pwd
+   30  cat cat.output 
+   31  rm -rf Payment1/
+   32  rm -rf cat.output 
+   33  mkdir temp
+   34  dirname ~/temp
+   35  MYTEMP="/home/ec2-user/temp/"
+   36  echo $MYTEMP
+   37  MYTEMP=""
+   38  rm -rf temp/
+   39  history > c268/c268-gh/Rey.22.09.18.module4
