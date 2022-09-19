@@ -1,0 +1,36 @@
+    1  sudo yum update
+    2  pwd
+    3  mkdir
+    4  ls
+    5  pwd
+    6  ls -ltr
+    7  ls -l
+    8  mkdir c268
+    9  cd c268
+   10  touch file.txt
+   11  ls -l
+   12  ls
+   13  --help
+   14  help
+   15  sudo yum install git
+   16  git 
+   17  pwd
+   18  cd /var/log
+   19  cd ..
+   20  pwd
+   21  ls
+   22  ls -l
+   23  ls -lt
+   24  cd /
+   25  cd ~
+   26  cd ..
+   27  ls -help
+   28  ls --help
+   29  cd /var
+   30  ls -laS
+   31  hwinfo -short
+   32  lscpu
+   33  sudo lshw $ sudo lshw -short
+   34  cat /etc/os-release
+   35  cd ~ && cd c268
+   36  history > Rey.220916.module2
