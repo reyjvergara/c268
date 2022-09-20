@@ -1,0 +1,107 @@
+    1  ps -ef
+    2  echo $USER
+    3  ps -ef | grep $USER
+    4  ps -ef | grep -v $USER
+    5  ps -f $$
+    6  pstree -shapu $$
+    7  ps -eo user,pid,cmd
+    8  ps -eo pid > ~/processes.list
+    9  sleep 300 &
+   10  ps -ef | grep sleep
+   11  kill pid
+   12  kill 31870
+   13  top
+   14  top -u root
+   15  top
+   16  ping yahoo.com
+   17  traceroute yahoo.com > ~/yahoo.route
+   18  less yahoo.route
+   19  ln -s yahoo.route route
+   20  netstat -a > ~/network.output
+   21  mkdir ~/network
+   22  mv yahoo.route network.output  ~/network/.
+   23  ifconfig
+   24  history > c268/c268-gh/Rey.220920.module6
+   25  cd ~
+   26  vi fixGenerator.sh
+   27  chmod 744 fixGenerator.sh 
+   28  ./fixGenerator.sh &
+   29  sed -i "s/\r//g" fixGenerator.sh 
+   30  ./fixGenerator.sh &
+   31  ls
+   32  ps
+   33  ps -ef | grep fixGen
+   34  cat fixlog2022092017.log
+   35  cat fixlog20220920172702.log 
+   36  clear
+   37  wc -l fixlog20220920172702.log 
+   38  %Y
+   39  +%Y
+   40  y
+   41  date %y
+   42  date  +%y
+   43  date  +%yyyy
+   44  cat fixlog20220920172702.log | touch newlog.log
+   45  cat newlog.log 
+   46* 
+   47  cat newlog.log 
+   48  cat fixlog20220920172702.log > newlog.log 
+   49  cat newlog.log 
+   50  mkdir log
+   51  mkdir logs
+   52  rm -rf log
+   53  mv newlog.log ./logs/newlog.log
+   54  cat fixlog20220920172702.log >> ./logs/newlog.log 
+   55  ln -s ./logs/newlog.log Daily
+   56  cd ~
+   57  less fixlog20220920172702.log 
+   58  cat less fixlog20220920172702.log 
+   59  less fixlog20220920172702.log 
+   60  cat fixlog20220920172702.log | less
+   61  cat fixlog20220920172702.log | less | grep "35=D" > newOrders.log
+   62  cat newOrders.log 
+   63  mv newOrders.log ./logs/newOrders.log
+   64  wc -l ./logs/newOrders.log 
+   65* 
+   66  cat fixlog2022092017*
+   67  cat fixlog20220920172702.log | less
+   68  cat fixlog2022092017 | grep 54=1 > ./logs/buyMessages.log
+   69  wc -l ./logs/buyMessages.log 
+   70  cat fixlog2022092017 | grep "54=1" > ./logs/buyMessages.log
+   71  cat fixlog20220920172702.log | grep "54=1" > ./logs/buyMessages.log
+   72  wc -l ./logs/buyMessages.log 
+   73  cat ./logs/buyMessages.log | grep "35=0" | wc -l
+   74  cat ./logs/buyMessages.log | grep "35=0" 
+   75  cat ./logs/buyMessages.log | cat grep "35=0" 
+   76  cat ./logs/buyMessages.log
+   77  cat ./logs/buyMessages.log | grep "35=D"
+   78  cat ./logs/buyMessages.log | grep "35=D" | wc 
+   79  cat ./logs/buyMessages.log | grep "35=D" | wc -l
+   80  cat ./logs/buyMessages.log | grep -v "35=D" > ./logs/noNewOrders.log 
+   81  cat ./logs/noNewOrders.log | less
+   82  wc -l ./logs/noNewOrders.log 
+   83  wc -l ./logs/buyMessages.log 
+   84  wc -w ./logs/buyMessages.log 
+   85  wc -w ./logs/noNewOrders.log 
+   86  tail -5 ./logs/noNewOrders.log 
+   87  tail -n 5 ./logs/noNewOrders.log 
+   88  clear
+   89  ls
+   90  grep appl fixlog20220920172702.log | head -2
+   91  grep appl fixlog20220920172702.log | head -n 2
+   92  grep aapl fixlog20220920172702.log | head -n 2
+   93  grep "aapl" fixlog20220920172702.log | head -n 2
+   94  grep "AAPL" fixlog20220920172702.log | head -n 2
+   95  grep -i aapl fixlog20220920172702.log | head -n 2
+   96  grep -i aapl fixlog20220920172702.log | head -2
+   97  ln -s fixGenerator.sh fix
+   98  tail fixlog*
+   99  tail fixlog* | grep -i 35=0
+  100  tail fixlog* | grep -i 35=d
+  101  mkdir superLogs
+  102  cp ./logs/* ./superLogs/
+  103  cd superLogs/ && ls
+  104  cd ~
+  105  grep -c FB fixlog20220920172702.log 
+  106  grep -i 35=d fixlog20220920172702.log  | grep -i nflx | wc -l
+  107  history > ./c268/c268-gh/Rey.220920.module5
