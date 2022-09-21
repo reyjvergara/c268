@@ -1,0 +1,47 @@
+    1  ./fixGenerator.sh &
+    2  sleep 10
+    3  sleep500 &
+    4  sleep 500 &
+    5  ps
+    6  sleep 700 &
+    7  ps
+    8  jobs
+    9  bg %1
+   10  bg %3
+   11  fg %4
+   12  sleep 10 | echo "hello world"
+   13  sleep 10 && echo "hello world"
+   14  sleep 10; echo "hello world"
+   15  sleep 5; man ls
+   16  sleep 10 & && echo "hello world"
+   17  bg sleep 10 && echo "hello world"
+   18  bg `sleep 10` && echo "hello world"
+   19  sleep 10 `&` && echo "hello world"
+   20  sleep 10 --help && echo "hello world"
+   21  sleep 10 -& && echo "hello world"
+   22  sleep 10 && echo "hello world" &
+   23  sleep 5; man ls &
+   24  grep -v "35=D" fixlog* > fixlog.log
+   25  grep "35=D" fixlog.log || grep "35=8" fixlog.log 
+   26* fixGen
+   27  ./fixGenerator.sh &
+   28  watch 10188
+   29  watch 2
+   30  watch wc -l ./fixGenerator.sh 
+   31  ./fixGenerator.sh &
+   32  watch wc -l ./fixGenerator.sh 
+   33  watch wc -l 3
+   34  watch wc -l ./fixGenerator.sh 
+   35  ls
+   36  rm fixlog20220921*
+   37  ls
+   38  rm fixlog20220921194549.log 
+   39  ls
+   40  rm -i fixlog20220921194549.log 
+   41  rm -i fixlog20220921*
+   42  ls
+   43  rm -i fixlog2022092*
+   44  ./fixGenerator.sh &
+   45  ls
+   46  watch wc -l fixlog*
+   47  history > ./c268/c268-gh/Rey.220921.module7
