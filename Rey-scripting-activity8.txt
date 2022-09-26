@@ -1,0 +1,50 @@
+#!/bin/bash
+
+numberArray=()
+Sum=0
+Product=1
+for(( x=0; x<10; x++));
+do
+	if (( x<5 )); then
+		echo "enter number"
+		# while loop to ensure # is entered
+		read temp_num
+		while ! [[ $temp_num =~ [0-9] ]]; do
+			echo "nan, enter a number"
+		        read temp_num
+	        done
+		numberArray+=($temp_num)
+		Sum=$(($Sum+$temp_num))
+		Product=$((${Product}*$temp_num))		
+	else
+		echo "enter a number to continue"
+		echo "or any other character to exit"
+		read choice
+		if ! [[ $choice =~ [0-9] ]]; then
+			break
+		else
+			numberArray+=($choice)
+			Sum=$((Sum+temp_num))
+			Product=$((Product*temp_num))
+		fi
+	fi
+done
+
+echo "Product $Product"
+echo "Sum $Sum"
+echo "Average $((Sum/${#numberArray[@]}))"
+# could do it in one for loop, but lets do another
+Min=${numberArray[0]}
+Max=${numberArray[0]}
+#min and max should be the first integer
+# maybe it should all be the first integer in array 
+for(( x=1; x<"${#numberArray[@]}"; x++)); do
+	if (( ${numberArray[x]}<Min )); then
+		Min=${numberArray[x]}
+	elif (( ${numberArray[x]}>Max )); then
+		Max=${numberArray[x]}
+	fi
+done
+echo "Min $Min"
+echo "Max $Max"
+#then show all variables made

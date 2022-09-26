@@ -1,0 +1,18 @@
+#!/bin/bash
+# read the number.txt file
+# sort the numbers in reverse order (max to min?)
+# this sort should only have unique numbers
+# output result to screen
+arr=()
+temp=''
+while IFS=$'\n' read array; do
+	temp="${array[0]}"
+done < numbers.txt
+
+arr=( $( echo $temp | xargs -n1 | sort -unr | xargs ) )
+echo ${arr[@]}
+
+arr2=$( ( echo $temp | xargs -n1 | sort -un | xargs ) )
+echo ${arr2[@]}
+
+

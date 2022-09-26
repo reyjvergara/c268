@@ -1,0 +1,29 @@
+#!/bin/bash
+echo ~enter password to test~
+read pword
+CAPITAL=0
+LOWER=0
+NUMBERS=0
+LETTERS=0
+if [ ${#pword} -ge 8 ]; then
+	for(( i=0; i<${#pword}; i=i+1 )); do
+		temp="${pword:$i:1}"
+	#	if [[ $CAPITAL==1 && $LOWER==1 && $NUMBERS==1 && $LETTERS==1 ]]; then
+	#		break
+		if [[ $temp == [a-z] && $LOWER -eq 0 ]]; then
+		        LOWER=1
+	     		LETTERS=1	     
+		elif [[ $temp == [0-9] && $NUMBER -eq 0 ]]; then
+			NUMBERS=1
+		elif [[ $temp == [A-Z] && $CAPITAL -eq 0 ]]; then
+                        CAPITAL=1
+		        LETTERS=1
+		fi
+	done
+fi
+if [[ $CAPITAL -eq 1 && $LOWER -eq 1 && $NUMBERS -eq 1 && $LETTERS -eq 1 ]]; then
+	echo "strong pass"
+	exit 0
+fi
+echo "bad pass"
+exit 1
